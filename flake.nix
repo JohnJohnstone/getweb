@@ -50,7 +50,7 @@
                     lockFile = ./Cargo.lock;
                 };
                 OPENSSL_DEV=pkgs.openssl.dev;
-                buildInputs = [
+                nativeBuildInputs = [
                     openssl
                     pkg-config
                 ];
