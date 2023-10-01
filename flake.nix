@@ -49,8 +49,8 @@
                 cargoLock = {
                     lockFile = ./Cargo.lock;
                 };
-                OPENSSL_DEV=pkgs.openssl.dev;
-                PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig"
+                OPENSSL_DEV=openssl.dev;
+                PKG_CONFIG_PATH = "${openssl.dev}/lib/pkgconfig"
                 RUST_BACKTRACE = 1;
                 buildInputs = [
                     (rust-bin.stable.latest.default.override {
