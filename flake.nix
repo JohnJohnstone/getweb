@@ -49,11 +49,11 @@
                 cargoLock = {
                     lockFile = ./Cargo.lock;
                 };
-
-          buildInputs = [
-            openssl
-            pkg-config
-          ];
+                OPENSSL_DEV=pkgs.openssl.dev;
+                buildInputs = [
+                    openssl
+                    pkg-config
+                ];
             };
              }
     );
