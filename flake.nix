@@ -52,6 +52,7 @@
                 OPENSSL_DEV=pkgs.openssl.dev;
                 RUST_BACKTRACE = 1;
                 buildInputs = [
+                    perl
                     openssl
                 ];
                 nativeBuildInputs = [
