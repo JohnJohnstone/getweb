@@ -18,7 +18,6 @@
       with pkgs;
       {
         devShells.default = mkShell {
-
           buildInputs = [
             openssl
             pkg-config
@@ -50,6 +49,11 @@
                 cargoLock = {
                     lockFile = ./Cargo.lock;
                 };
+
+          buildInputs = [
+            openssl
+            pkg-config
+          ];
             };
              }
     );
