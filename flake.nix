@@ -52,7 +52,7 @@
                 OPENSSL_DEV=openssl.dev;
                 OPENSSL_LIB_DIR = "${lib.getLib openssl}/lib";
                 OPENSSL_INCLUDE_DIR = "${openssl.dev}/include";
-                PKG_CONFIG_PATH = "${openssl.dev}/lib/pkgconfig"
+                PKG_CONFIG_PATH = "${openssl.dev}/lib/pkgconfig";
                 RUST_BACKTRACE = 1;
                 buildInputs = [
                     (rust-bin.stable.latest.default.override {
