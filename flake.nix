@@ -53,6 +53,13 @@
                 PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig"
                 RUST_BACKTRACE = 1;
                 buildInputs = [
+                    (rust-bin.stable.latest.default.override {
+                    targets = [
+                        "armv7-linux-androideabi"
+                        "aarch64-linux-android"
+                        "x86_64-pc-windows-gnu"
+                    ];
+                    })
                     perl
                     openssl
                 ];
