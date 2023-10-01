@@ -63,10 +63,12 @@
                     ];
                     })
                     perl
+                    pkg-config
                     openssl
                 ];
                 nativeBuildInputs = [
                     pkg-config
+                    openssl
                 ];
             };
              }
